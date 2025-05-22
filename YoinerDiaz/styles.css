@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #000;
+  color: #8d4925;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+ background: linear-gradient(to right, #ffffe1);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAV BAR */
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .links a {
+  color: #8d4925;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Text */
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text .hi {
+  font-size: 2rem;
+  font-family: 'Unica One', sans-serif;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-family: 'Sarpanch', sans-serif;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-family: 'Rosario', sans-serif;
+  line-height: 1.5;
+  color: #8d4925;
+}
+
+/* Image */
+.hero-image {
+position: relative;  /* Necesario para controlar z-index */
+  z-index: 1;          /* Detrás de la ola */
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hero-image img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  
+}
+
+/* Wave (Decorativo) */
+.wave {
+   position: relative; /* O absolute si la quieres fija */
+  z-index: 2;         /* Por delante de la imagen */
+  width: 100%;
+  height: 150px;
+  background-color: #ffff81;
+  border-top-left-radius: 50% 60px;
+  border-top-right-radius: 50% 60px;
+  margin-top: -100px; /* Sube la ola encima */
+}
