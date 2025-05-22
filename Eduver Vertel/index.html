@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/298eeba086.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+        <h1>Mi Portafolio</h1>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="contenido-hero">
+        <img src="/imagenes/imagen23-removebg-preview.png" alt="Foto de perfil">
+        <h2>Hola, soy Eduber Santamaria</h2>
+        <p>Desarrollador de Software | Frontend & Backend</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante/desarrollador con experiencia en proyectos como páginas web, aplicaciones de escritorio y más. Apasionado por la tecnología y siempre buscando mejorar mis habilidades.</p>
+    </section>
+
+    <section id="habilidades" class="seccion">
+        <h2>Habilidades</h2>
+        <ul class="habilidades">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="proyectos" class="seccion">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="/imagenes/image.png" alt="Proyecto 1">
+                <h3>Sistema de Reservas</h3>
+                <p>Aplicación web para reservar entradas a eventos. HTML, CSS, JS, PHP, MySQL.</p>
+            </div>
+
+            <div class="proyecto">
+                <img src="/imagenes/Logo Veterinaria Gato y Perro Moderno Azul.png" alt="Proyecto 2">
+                <h3>Sistema de Gestion de Veterinaria</h3>
+                <p>Aplicacion para la gestion de citas y productos de una veterinaria. HTML, CSS, JS, PHP, MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <form action="#">
+            <p><i class="fa-solid fa-envelope correo"></i> Eduververtel@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #00bd0d;"></i> 3003408078</p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Eduber Santamaria - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
