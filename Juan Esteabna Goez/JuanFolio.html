@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <div class="head">
-        <div class="contentituloname"><div class="icon"></div><h1>Juan Goez</h1></div>
-        <div class="seccionlink">
-            <a href="#descripcion">Descripcion</a>
-            <a href="#entornos">Entornos</a>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Juan Goez | Portfolio</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    </head>
+    <body>
+    <header class="head">
+        <div class="contentituloname">
+        <div class="icon"></div>
+        <h1>Juan Goez</h1>
         </div>
-        <div class="info">
-            <img class="imgmy" src="./1.jpg" alt="">
-            <div class="detalle"><p>
-                <h3 id="descripcion">A bit About me</h3>
-                <p>My name is Juan Esteban Goez, a front-end web developer in React with Nede.js or PHP, specialized in MySQL and Postgres as 
-                relational databases and Neo4j as non-relational, Java, JavaScript, C++, C#.</p>
-            </div>
+        <nav class="seccionlink">
+        <a href="#descripcion">About Me</a>
+        <a href="#entornos">Skills</a>
+        </nav>
+    </header>
+
+    <section class="info">
+        <img class="imgmy" src="./1.jpg" alt="Juan Goez profile picture"/>
+        <div class="detalle">
+        <h3 id="descripcion">A Bit About Me</h3>
+        <p>
+            My name is Juan Esteban Goez. I'm a front-end web developer specialized in React, with backend experience in Node.js and PHP.
+            I work with relational databases like MySQL and PostgreSQL, and also with Neo4j as a non-relational database. I also have skills in Java, JavaScript, C++, and C#.
+        </p>
         </div>
-        <div class="info">
-            <h3 class="Entornos">Java</h3>
-            <h3 class="Entornos">JavaScript</h3>
-            <h3 class="Entornos">C++</h3>
-            <h3 class="Entornos">C#</h3>
+    </section>
+
+    <section class="info">
+        <h3 class="Entornos">Java</h3>
+        <h3 class="Entornos">JavaScript</h3>
+        <h3 class="Entornos">C++</h3>
+        <h3 class="Entornos">C#</h3>
+    </section>
+
+    <section class="contenedorentornos" id="entornos">
+        <div class="cajaentorno">
+        <h3>Java</h3>
+        <p>General-purpose, object-oriented, and cross-platform programming language.</p>
         </div>
-        <div class="contenedorentornos">
-            <div class="cajaentorno" id="entornos">
-                <h3>Java</h3>
-                <p>Lenguaje de programación de propósito general, orientado a objetos y multiplataforma.</p>
-            </div>
-            <div class="cajaentorno">
-                <h3>JavaScript</h3>
-                <p>Lenguaje de programación de alto nivel, interpretado y orientado a objetos.</p>
-            </div>
-            <div class="cajaentorno">
-                <h3>C++</h3>
-                <p>Lenguaje de programación de alto nivel, interpretado y orientado a objetos.</p>
-            </div>
-            <div class="cajaentorno">
-                <h3>C#</h3>
-                <p>Lenguaje de programación de alto nivel, interpretado y orientado a objetos.</p>
-            </div>
+        <div class="cajaentorno">
+        <h3>JavaScript</h3>
+        <p>High-level, interpreted, and object-oriented scripting language widely used for web development.</p>
         </div>
-    </div>
-    
-</body>
+        <div class="cajaentorno">
+        <h3>C++</h3>
+        <p>Powerful high-level language known for performance and object-oriented features.</p>
+        </div>
+        <div class="cajaentorno">
+        <h3>C#</h3>
+        <p>Modern object-oriented programming language developed by Microsoft, used for a variety of applications.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; font-family: Lato, sans-serif;">
+        <p>Contact: juanestodo500@gmail.com | GitHub: <a href="https://github.com/JuanGoez18" target="_blank">github.com/JuanGoez18</a></p>
+    </footer>
+    </body>
 </html>
